@@ -1,5 +1,30 @@
-# RAG Agent API
+## Live Demo Notes
+- Hosted on Render free tier: Vector DB resets after ~15 min inactivity or redeploy.
+- To test:
+  1. POST to `/ingest` with sample texts (example below).
+  2. Then query via `/rag-query` or `/agent-run`.
 
+Example /ingest payload:
+```json
+{
+  "texts": [
+    "Arcadian Digital builds AI automations for Australian companies.",
+    "LangChain enables RAG and agentic workflows with tools.",
+    "OpenAI embeddings power vector search in Chroma."
+  ]
+}
+Example /rag-query payload:
+```json
+{
+  "question": "What does Arcadian Digital do?"
+}
+Example /agent-run payload (tests agent's context retrieval, as well as calculator functionality):
+{
+  "question": "What is 15 * 8 plus the number of texts I ingested earlier?"
+}
+
+
+# RAG Agent API
 Production-ready FastAPI service demonstrating:
 - Document ingestion into persistent Chroma vector DB (OpenAI embeddings)
 - Simple RAG Q&A endpoint
