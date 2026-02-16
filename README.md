@@ -22,7 +22,7 @@ Example /agent-run payload (tests agent's context retrieval, as well as calculat
 {
   "question": "What is 15 * 8 plus the number of texts I ingested earlier?"
 }
-
+'''json
 
 # RAG Agent API
 Production-ready FastAPI service demonstrating:
