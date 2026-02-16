@@ -13,19 +13,19 @@ Example /ingest payload:
     "OpenAI embeddings power vector search in Chroma."
   ]
 }
-``json
+```
 Example /rag-query payload:
 ```json
 {
   "question": "What does Arcadian Digital do?"
 }
-``json
+```
 Example /agent-run payload (tests agent's context retrieval, as well as calculator functionality):
-'''json
+```json
 {
   "question": "What is 15 * 8 plus the number of texts I ingested earlier?"
 }
-``json
+```
 
 # RAG Agent API
 Production-ready FastAPI service demonstrating:
