@@ -8,7 +8,6 @@ Example /ingest payload:
 ```json
 {
   "texts": [
-    "Arcadian Digital builds AI automations for Australian companies.",
     "LangChain enables RAG and agentic workflows with tools.",
     "OpenAI embeddings power vector search in Chroma."
   ]
@@ -17,7 +16,7 @@ Example /ingest payload:
 Example /rag-query payload:
 ```json
 {
-  "question": "What does Arcadian Digital do?"
+  "question": "What does LangChain do?"
 }
 ```
 Example /agent-run payload (tests agent's context retrieval, as well as calculator functionality):
