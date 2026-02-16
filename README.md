@@ -50,5 +50,6 @@ Swagger UI at `/docs`.
 ## Deployment
 - Free on Render/Railway (bind persistent volume for `db/` folder).
 - Add Dockerfile for containerization if needed.
+- For Render, pin Python with `.python-version` (this repo uses `3.12`) to avoid source-building `pydantic-core` on Python 3.14.
 
 Built to showcase FastAPI + LangChain RAG/agent skills.
