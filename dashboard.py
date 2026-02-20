@@ -13,7 +13,7 @@ st.caption("Live multi-agent system • Powered by Claude 3.5 Sonnet • Exactly
 st.sidebar.image("https://via.placeholder.com/320x90/0A2540/00D4FF?text=Big+Wave+Digital", use_column_width=True)
 brief = st.sidebar.text_area("Campaign Brief", "Hiring Senior AI Engineer – Sydney – Big Wave Digital", height=100)
 
-client = Anthropic(api_key=st.secrets.get("ANTHROPIC_API_KEY"))  # Add your key in Streamlit secrets
+client = Anthropic(api_key=st.secrets.get("ANTHROPIC_KEY_TWO"))  # Add your key in Streamlit secrets
 
 if st.sidebar.button("🚀 Launch Full Agentic Campaign", type="primary"):
     with st.spinner("5-agent swarm executing in real time..."):
