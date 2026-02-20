@@ -11,7 +11,7 @@ st.markdown("**Agentic Recruitment Marketing Orchestrator for Big Wave Digital**
 st.caption("Live demo • Built with pure LangChain • Exactly what Big Wave is hiring for")
 
 # Sidebar
-st.sidebar.image("https://via.placeholder.com/300x80/0A2540/00D4FF?text=Big+Wave+Digital", use_column_width=True)
+st.sidebar.image("https://via.placeholder.com/300x80/0A2540/00D4FF?text=Big+Wave+Digital", width="stretch")
 brief = st.sidebar.text_area("Campaign Brief", "Hiring Senior AI Engineer – Sydney – Big Wave Digital", height=120)
 
 if st.sidebar.button("🚀 Launch Full Agentic Campaign", type="primary"):
@@ -57,7 +57,7 @@ if st.sidebar.button("🚀 Launch Full Agentic Campaign", type="primary"):
 
     with tab4:
         st.subheader("Agent Orchestration Flow")
-        st.image("https://via.placeholder.com/900x300/0A2540/FFFFFF?text=Researcher+→+Strategist+→+Copywriter+→+Personalizer+→+Analyst", use_column_width=True)
+        st.image("https://via.placeholder.com/900x300/0A2540/FFFFFF?text=Researcher+→+Strategist+→+Copywriter+→+Personalizer+→+Analyst", width="stretch")
         st.caption("This exact flow can be wired directly into n8n / Make.com / Lindy.ai")
 
     if st.button("📤 Publish All Channels (Demo Mode)"):
